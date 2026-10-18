@@ -1,52 +1,104 @@
 
-# Web Application
 
-## Project Description
-This is a student management web application built using Python, Flask, HTML, and SQLite.
+# Web Application – Student Management System
 
-The application allows users to:
+## Project Overview
+
+This is a web-based Student Management System developed using Python, Flask, HTML, CSS, and SQLite.
+
+The application allows users to manage student details through a web interface. Users can add new students, view student records, update existing details, and delete records.
+
+## Features
+
 - Add student details
-- View student records
-- Update student details
+- View all student records
+- Update student information
 - Delete student records
+- Store student information in an SQLite database
+- Simple and user-friendly web interface
 
 ## Technologies Used
-- Python
-- Flask
-- HTML
-- CSS
-- SQLite
+
+- **Frontend:** HTML, CSS
+- **Backend:** Python, Flask
+- **Database:** SQLite
+- **Tools:** Visual Studio Code, Git, GitHub
+
+## Project Structure
+
+```text
+crud-web-application-page/
+├── app.py
+├── README.md
+├── .gitignore
+└── templates/
+    └── index.html
+```
+
+The `students.db` database file is created automatically when the application starts. It is excluded from GitHub using `.gitignore`.
+
+## Application Workflow
+
+1. The user opens the web application in a browser.
+2. The HTML form collects student name, email, and course.
+3. Flask handles the user's requests.
+4. SQLite stores and manages student records.
+5. The updated student records are displayed on the web page.
+
+## CRUD Operations
+
+| Operation | Description |
+|---|---|
+| Create | Add a new student |
+| Read | View student records |
+| Update | Edit existing student details |
+| Delete | Remove a student record |
 
 ## Requirements
-- Python installed on your computer
+
+- Python 3 installed
+- pip package manager
 - Flask
 
-## How to Run the Project
+## How to Download and Run
 
-1. Download or clone this project from GitHub.
-2. Open the project folder in VS Code.
-3. Open the terminal in the project folder.
-4. Install Flask:
+### 1. Clone the repository
 
-   ```bash
-   python -m pip install flask
-   ```
+```bash
+git clone https://github.com/dharanicharukonda-78/crud-web-application-page.git
+```
 
-5. Run the application:
+### 2. Open the project folder
 
-   ```bash
-   python app.py
-   ```
+```bash
+cd crud-web-application-page
+```
 
-6. Open this address in your browser:
+### 3. Install Flask
 
-   http://127.0.0.1:5000
+```bash
+python -m pip install flask
+```
 
-The SQLite database and students table are created automatically when the application starts.
+### 4. Run the application
 
-## Database
-The application uses SQLite to store student details:
-- ID
-- Name
-- Email
-- Course
+```bash
+python app.py
+```
+
+### 5. Open the application
+
+Open this URL in your browser:
+
+http://127.0.0.1:5000
+
+The application will create the SQLite database and the students table automatically when it starts.
+
+## Learning Outcome
+
+This project demonstrates the connection between a web frontend, a Python Flask backend, and an SQLite database, including the four CRUD operations.
+
+## Author
+
+Dharani Charukonda
+
